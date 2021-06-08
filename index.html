@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        cursor: pointer;
+      }
+      span {
+        display: block;
+        width: 60px;
+        height: 280px;
+        background: url(http://pic.5tu.cn/uploads/allimg/1908/pic_5tu_big_201907242018445628.jpg);
+        transition: 0.3s ease;
+        background-size: cover;
+      }
+      span:nth-child(1) {
+        background-position: 0 0;
+      }
+      span:nth-child(2) {
+        background-position: -60px;
+      }
+      span:nth-child(3) {
+        background-position: -120px 0;
+      }
+      span:nth-child(4) {
+        background-position: -180px 0;
+      }
+      span:nth-child(5) {
+        background-position: -240px 0;
+      }
+      span:nth-child(6) {
+        background-position: -300px 0;
+      }
+
+      .container:hover span {
+        margin: 0 0.4rem;
+        transform: rotate(15deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </body>
+</html>
